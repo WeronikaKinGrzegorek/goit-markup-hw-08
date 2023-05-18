@@ -58,6 +58,51 @@
                         +48 111 111 111</a
                     >
                 </div>
+                <!-- mobile menu -->
+                <button
+                    class="menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <svg width="40" height="40">
+                        <use
+                            href="./images/icons.svg#icon-mobile-menu-open"
+                        ></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mobile js-menu-container" id="mobile-menu">
+                <button class="menu-toggle js-close-menu">
+                    <svg width="40" height="40">
+                        <use
+                            href="./images/icons.svg#icon-mobile-menu-close"
+                        ></use>
+                    </svg>
+                </button>
+                <div class="mobile__menu">
+                    <ul class="mobile__list">
+                        <li><a href="" class="mobile__link">Agencja</a></li>
+                        <li><a href="" class="mobile__link">Portfolio</a></li>
+                        <li><a href="" class="mobile__link">Kontakt</a></li>
+                    </ul>
+                    <div class="mobile__contacts">
+                        <a class="mobile__phone" href="tel:+48111111111">
+                            +48 111 111 111</a
+                        >
+                        <a
+                            class="mobile__mail"
+                            href="mailto:info@devstudio.com"
+                        >
+                            info@devstudio.com</a
+                        >
+                        <div class="mobile__socials">
+                            <a class="mobile__item" href="#"> Instagram </a>
+                            <a class="mobile__item" href="#"> Twitter </a>
+                            <a class="mobile__item" href="#"> Facebook </a>
+                            <a class="mobile__item" href="#"> LinkedIn </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <main>
@@ -606,6 +651,13 @@
                 </div>
             </div>
         </div>
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="./js/mobile-menu.js"></script>
         <script src="./js/modal.js"></script>
     </body>
 </html>

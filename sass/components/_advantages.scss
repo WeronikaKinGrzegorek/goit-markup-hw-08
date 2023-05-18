@@ -2,6 +2,10 @@
     &__list {
         display: flex;
         gap: 30px;
+        // flex-wrap: wrap;
+        // @include desktop {
+        //     flex-wrap: nowrap;
+        // }
     }
     &__icon {
         background-color: var(--background-color-light);
