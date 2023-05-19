@@ -37,6 +37,12 @@ svg {
     @include desktop {
         padding: 94px 0;
     }
+    &--hidden {
+        display: none;
+        @include desktop {
+            display: block;
+        }
+    }
 }
 .border {
     border-bottom: 1px solid #ececec;
@@ -55,6 +61,39 @@ svg {
     }
     &__layout {
         display: flex;
-        column-gap: 70px;
+        flex-direction: column;
+        row-gap: 60px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @include desktop {
+            flex-direction: row;
+            column-gap: 70px;
+            text-align: left;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+        & .logo {
+            @include tablet {
+                margin-right: 0px;
+            }
+        }
+        @include tablet {
+            flex-direction: row;
+            column-gap: 144px;
+            justify-content: center;
+        }
+        @include desktop {
+            flex-direction: row;
+            column-gap: 70px;
+            text-align: left;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
     }
 }

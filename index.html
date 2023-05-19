@@ -43,14 +43,14 @@
                 </nav>
                 <div class="contact">
                     <a class="contact__links" href="mailto:info@devstudio.com">
-                        <svg class="contact__icons" width="16px" height="12px">
+                        <svg class="contact__mail" width="16px" height="12px">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com</a
                     >
 
                     <a class="contact__links" href="tel:+48111111111">
-                        <svg class="contact__icons" width="10px" height="16px">
+                        <svg class="contact__phone" width="10px" height="16px">
                             <use
                                 href="./images/icons.svg#icon-smartphone"
                             ></use>
@@ -125,7 +125,7 @@
             <section class="section">
                 <div class="container advantages">
                     <ul class="advantages__list">
-                        <li>
+                        <li class="advantages__item">
                             <div class="advantages__icon">
                                 <svg width="70px" height="70px">
                                     <use
@@ -140,7 +140,7 @@
                                 sodales dui. Interdum et malesuada
                             </p>
                         </li>
-                        <li>
+                        <li class="advantages__item">
                             <div class="advantages__icon">
                                 <svg width="70" height="70">
                                     <use
@@ -155,7 +155,7 @@
                                 sodales dui. Interdum et malesuada
                             </p>
                         </li>
-                        <li>
+                        <li class="advantages__item">
                             <div class="advantages__icon">
                                 <svg width="70" height="70">
                                     <use
@@ -170,7 +170,7 @@
                                 sodales dui. Interdum et malesuada
                             </p>
                         </li>
-                        <li>
+                        <li class="advantages__item">
                             <div class="advantages__icon">
                                 <svg width="70px" height="70px">
                                     <use
@@ -189,7 +189,7 @@
                 </div>
             </section>
             <!--Czym się zajmujemy-->
-            <section class="section">
+            <section class="section section--hidden">
                 <div class="container field">
                     <h2 class="field__headline">Czym się zajmujemy</h2>
                     <ul class="field__list">
@@ -241,12 +241,14 @@
                     <h2 class="team__headline">Nasz Zespół</h2>
                     <ul class="team__list">
                         <li class="team__item">
-                            <figure>
+                            <figure class="team__image">
                                 <img
                                     src="./images/Product-Designer.jpg"
                                     alt="zdjęcie Product Designera"
-                                    width="270"
-                                    height="260"
+                                    srcset="
+                                        ./images/Product-Designer@2x.jpg 2x,
+                                        ./images/Product-Designer@3x.jpg 3x
+                                    "
                                 />
                                 <figcaption class="team__member">
                                     <h3 class="team__name">John Doe</h3>
@@ -288,12 +290,14 @@
                             </figure>
                         </li>
                         <li class="team__item">
-                            <figure>
+                            <figure class="team__image">
                                 <img
                                     src="./images/Frontend-Developer.jpg"
                                     alt="zdjęcie Frontend Developera"
-                                    width="270"
-                                    height="260"
+                                    srcset="
+                                        ./images/Frontend-Developer@2x.jpg 2x,
+                                        ./images/Frontend-Developer@3x.jpg 3x
+                                    "
                                 />
                                 <figcaption class="team__member">
                                     <h3 class="team__name">John Doe</h3>
@@ -335,12 +339,14 @@
                             </figure>
                         </li>
                         <li class="team__item">
-                            <figure>
+                            <figure class="team__image">
                                 <img
                                     src="./images/Head-Marketing.jpg"
                                     alt="zdjęcie szefa Marketingu"
-                                    width="270"
-                                    height="260"
+                                    srcset="
+                                        ./images/Head-Marketing@2x.jpg 2x,
+                                        ./images/Head-Marketing@3x.jpg 3x
+                                    "
                                 />
                                 <figcaption class="team__member">
                                     <h3 class="team__name">John Doe</h3>
@@ -380,12 +386,14 @@
                             </figure>
                         </li>
                         <li class="team__item">
-                            <figure>
+                            <figure class="team__image">
                                 <img
                                     src="./images/UI-Designer.jpg"
                                     alt="zdjęcie UI Designera"
-                                    width="270"
-                                    height="260"
+                                    srcset="
+                                        ./images/UI-Designer@2x.jpg 2x,
+                                        ./images/UI-Designer@3x.jpg 3x
+                                    "
                                 />
                                 <figcaption class="team__member">
                                     <h3 class="team__name">John Doe</h3>
@@ -492,54 +500,58 @@
         </main>
         <footer class="footer footer__background">
             <div class="container footer__layout">
-                <div>
-                    <a class="logo" href="./index.html"
-                        ><span class="logo__web">Web</span
-                        ><span class="logo__studio">Studio</span></a
-                    >
-                    <address class="address">
-                        <span class="address__place"
-                            >m. Warszawa, Aleje Jerozolimskie 21</span
+                <div class="footer__contacts">
+                    <div>
+                        <a class="logo" href="./index.html"
+                            ><span class="logo__web">Web</span
+                            ><span class="logo__studio">Studio</span></a
                         >
-                        <a class="address__link" href="mailto:info@example.com"
-                            >info@example.com</a
-                        >
-                        <a class="address__link" href="tel:+48111111111"
-                            >+48 111 111 111</a
-                        >
-                    </address>
-                </div>
-                <div class="join-us">
-                    <h4 class="join-us__title">Dołącz do nas</h4>
-                    <div class="join-us__list">
-                        <a class="join-us__link" href="#">
-                            <svg width="20px" height="20px">
-                                <use
-                                    href="./images/icons.svg#icon-instagram-1"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a class="join-us__link" href="#">
-                            <svg width="20px" height="20px">
-                                <use
-                                    href="./images/icons.svg#icon-twitter-1"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a class="join-us__link" href="#">
-                            <svg width="20px" height="20px">
-                                <use
-                                    href="./images/icons.svg#icon-facebook-1"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a class="join-us__link" href="#">
-                            <svg width="20px" height="20px">
-                                <use
-                                    href="./images/icons.svg#icon-linkedin-1"
-                                ></use>
-                            </svg>
-                        </a>
+                        <address class="address">
+                            <span class="address__place"
+                                >m. Warszawa, Aleje Jerozolimskie 21</span
+                            >
+                            <a
+                                class="address__link"
+                                href="mailto:info@example.com"
+                                >info@example.com</a
+                            >
+                            <a class="address__link" href="tel:+48111111111"
+                                >+48 111 111 111</a
+                            >
+                        </address>
+                    </div>
+                    <div class="join-us">
+                        <h4 class="join-us__title">Dołącz do nas</h4>
+                        <div class="join-us__list">
+                            <a class="join-us__link" href="#">
+                                <svg width="20px" height="20px">
+                                    <use
+                                        href="./images/icons.svg#icon-instagram-1"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a class="join-us__link" href="#">
+                                <svg width="20px" height="20px">
+                                    <use
+                                        href="./images/icons.svg#icon-twitter-1"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a class="join-us__link" href="#">
+                                <svg width="20px" height="20px">
+                                    <use
+                                        href="./images/icons.svg#icon-facebook-1"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a class="join-us__link" href="#">
+                                <svg width="20px" height="20px">
+                                    <use
+                                        href="./images/icons.svg#icon-linkedin-1"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="newsletter">

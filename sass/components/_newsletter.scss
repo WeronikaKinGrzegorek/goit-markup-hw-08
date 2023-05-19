@@ -1,6 +1,8 @@
 .newsletter {
-    margin-left: 8px;
     flex-grow: 1;
+    @include desktop {
+        margin-left: 8px;
+    }
 
     &__title {
         font-weight: 700;
@@ -15,7 +17,13 @@
 
     &__form {
         display: flex;
+        flex-direction: column;
         gap: 12px;
+        justify-content: center;
+        align-items: center;
+        @include desktop {
+            flex-direction: row;
+        }
     }
 
     &__input {
@@ -28,7 +36,10 @@
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         flex-grow: 1;
-        max-width: 358px;
+        width: 450px;
+        @include desktop {
+            width: 358px;
+        }
     }
 
     &__button {
@@ -49,6 +60,8 @@
         border-radius: 4px;
         white-space: nowrap;
         fill: currentColor;
+
+        width: 200px;
 
         &:is(:hover, :focus) {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
