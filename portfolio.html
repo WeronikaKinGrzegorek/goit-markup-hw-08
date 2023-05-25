@@ -29,7 +29,9 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li>
-                            <a class="menu__link" href="#">Agencja</a>
+                            <a class="menu__link" href="./index.html"
+                                >Agencja</a
+                            >
                         </li>
                         <li>
                             <a class="menu__link link-underline" href="#"
@@ -41,13 +43,13 @@
                 </nav>
                 <div class="contact">
                     <a class="contact__links" href="mailto:info@devstudio.com">
-                        <svg class="contact__icons" width="16" height="12">
+                        <svg class="contact__mail" width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com</a
                     >
                     <a class="contact__links" href="tel:+48111111111">
-                        <svg class="contact__icons" width="10px" height="16px">
+                        <svg class="contact__phone" width="10px" height="16px">
                             <use
                                 href="./images/icons.svg#icon-smartphone"
                             ></use>
@@ -55,9 +57,55 @@
                         +48 111 111 111</a
                     >
                 </div>
+                <!-- mobile menu -->
+                <button
+                    class="menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <svg width="40" height="40">
+                        <use
+                            href="./images/icons.svg#icon-mobile-menu-open"
+                        ></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mobile js-menu-container" id="mobile-menu">
+                <button class="menu-toggle js-close-menu">
+                    <svg width="40" height="40">
+                        <use
+                            href="./images/icons.svg#icon-mobile-menu-close"
+                        ></use>
+                    </svg>
+                </button>
+                <div class="mobile__menu">
+                    <ul class="mobile__list">
+                        <li><a href="" class="mobile__link">Agencja</a></li>
+                        <li><a href="" class="mobile__link">Portfolio</a></li>
+                        <li><a href="" class="mobile__link">Kontakt</a></li>
+                    </ul>
+                    <div class="mobile__contacts">
+                        <a class="mobile__phone" href="tel:+48111111111">
+                            +48 111 111 111</a
+                        >
+                        <a
+                            class="mobile__mail"
+                            href="mailto:info@devstudio.com"
+                        >
+                            info@devstudio.com</a
+                        >
+                        <div class="mobile__socials">
+                            <a class="mobile__item" href="#"> Instagram </a>
+                            <a class="mobile__item" href="#"> Twitter </a>
+                            <a class="mobile__item" href="#"> Facebook </a>
+                            <a class="mobile__item" href="#"> LinkedIn </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <main>
+            <!-- sekcja główna Portfolio -->
             <section class="section">
                 <div class="container">
                     <ul class="selection">
@@ -95,8 +143,10 @@
                                     <img
                                         src="./images/Portfolio/Techno.jpg"
                                         alt="Laptop with website displayed"
-                                        width="370"
-                                        height="294"
+                                        srcset="
+                                            ./images/Portfolio/Techno@2x.jpg 2x,
+                                            ./images/Portfolio/Techno@3x.jpg 3x
+                                        "
                                     />
                                     <div class="overlay">
                                         <p class="overlay__text">
@@ -123,8 +173,10 @@
                                     <img
                                         src="./images/Portfolio/NewOrlean.jpg"
                                         alt="Picture of two men playing basketball"
-                                        width="370"
-                                        height="294"
+                                        srcset="
+                                            ./images/Portfolio/NewOrlean@2x.jpg 2x,
+                                            ./images/Portfolio/NewOrlean@3x.jpg 3x
+                                        "
                                     />
                                     <div class="overlay">
                                         <p class="overlay__text">
@@ -151,8 +203,10 @@
                                     <img
                                         src="./images/Portfolio/Seafood.jpg"
                                         alt="Logo of the Seafood Restaurant"
-                                        width="370"
-                                        height="294"
+                                        srcset="
+                                            ./images/Portfolio/Seafood@2x.jpg 2x,
+                                            ./images/Portfolio/Seafood@3x.jpg 3x
+                                        "
                                     />
                                     <div class="overlay">
                                         <p class="overlay__text">
@@ -179,8 +233,10 @@
                                     <img
                                         src="./images/Portfolio/PrimeHeadphones.jpg"
                                         alt="Picture of headphones"
-                                        width="370"
-                                        height="294"
+                                        srcset="
+                                            ./images/Portfolio/PrimeHeadphones@2x.jpg 2x,
+                                            ./images/Portfolio/PrimeHeadphones@3x.jpg 3x
+                                        "
                                     />
                                     <div class="overlay">
                                         <p class="overlay__text">
@@ -207,8 +263,10 @@
                                     <img
                                         src="./images/Portfolio/Boxes.jpg"
                                         alt="Picture of boxes"
-                                        width="370"
-                                        height="294"
+                                        srcset="
+                                            ./images/Portfolio/Boxes@2x.jpg 2x,
+                                            ./images/Portfolio/Boxes@3x.jpg 3x
+                                        "
                                     />
                                     <div class="overlay">
                                         <p class="overlay__text">
@@ -235,8 +293,10 @@
                                     <img
                                         src="./images/Portfolio/Inspiration.jpg"
                                         alt="Website with a worldmap displaed on MAC"
-                                        width="370"
-                                        height="294"
+                                        srcset="
+                                            ./images/Portfolio/Inspiration@2x.jpg 2x,
+                                            ./images/Portfolio/Inspiration@3x.jpg 3x
+                                        "
                                     />
                                     <div class="overlay">
                                         <p class="overlay__text">
@@ -265,8 +325,10 @@
                                     <img
                                         src="./images/Portfolio/Magasine.jpg"
                                         alt="Picture of a newspaper"
-                                        width="370"
-                                        height="294"
+                                        srcset="
+                                            ./images/Portfolio/Magasine@2x.jpg 2x,
+                                            ./images/Portfolio/Magasine@3x.jpg 3x
+                                        "
                                     />
                                     <div class="overlay">
                                         <p class="overlay__text">
@@ -293,8 +355,10 @@
                                     <img
                                         src="./images/Portfolio/Label.jpg"
                                         alt="Picture of label tag"
-                                        width="370"
-                                        height="294"
+                                        srcset="
+                                            ./images/Portfolio/Label@2x.jpg 2x,
+                                            ./images/Portfolio/Label@3x.jpg 3x
+                                        "
                                     />
                                     <div class="overlay">
                                         <p class="overlay__text">
@@ -319,8 +383,10 @@
                                     <img
                                         src="./images/Portfolio/GrowingBusiness.jpg"
                                         alt="Writing an app on the laptop"
-                                        width="370"
-                                        height="294"
+                                        srcset="
+                                            ./images/Portfolio/GrowingBusiness@2x.jpg 2x,
+                                            ./images/Portfolio/GrowingBusiness@3x.jpg 3x
+                                        "
                                     />
                                     <div class="overlay">
                                         <p class="overlay__text">
@@ -347,54 +413,58 @@
         </main>
         <footer class="footer footer__background">
             <div class="container footer__layout">
-                <div>
-                    <a class="logo" href="./index.html"
-                        ><span class="logo__web">Web</span
-                        ><span class="logo__studio">Studio</span></a
-                    >
-                    <address class="address">
-                        <span class="address__place"
-                            >m. Warszawa, Aleje Jerozolimskie 21</span
+                <div class="footer__contacts">
+                    <div>
+                        <a class="logo" href="./index.html"
+                            ><span class="logo__web">Web</span
+                            ><span class="logo__studio">Studio</span></a
                         >
-                        <a class="address__link" href="mailto:info@example.com"
-                            >info@example.com</a
-                        >
-                        <a class="address__link" href="tel:+48111111111"
-                            >+48 111 111 111</a
-                        >
-                    </address>
-                </div>
-                <div class="join-us">
-                    <h4 class="join-us__title">Dołącz do nas</h4>
-                    <div class="join-us__list">
-                        <a class="join-us__link" href="#">
-                            <svg width="20px" height="20px">
-                                <use
-                                    href="./images/icons.svg#icon-instagram-1"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a class="join-us__link" href="#">
-                            <svg width="20px" height="20px">
-                                <use
-                                    href="./images/icons.svg#icon-twitter-1"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a class="join-us__link" href="#">
-                            <svg width="20px" height="20px">
-                                <use
-                                    href="./images/icons.svg#icon-facebook-1"
-                                ></use>
-                            </svg>
-                        </a>
-                        <a class="join-us__link" href="#">
-                            <svg width="20px" height="20px">
-                                <use
-                                    href="./images/icons.svg#icon-linkedin-1"
-                                ></use>
-                            </svg>
-                        </a>
+                        <address class="address">
+                            <span class="address__place"
+                                >m. Warszawa, Aleje Jerozolimskie 21</span
+                            >
+                            <a
+                                class="address__link"
+                                href="mailto:info@example.com"
+                                >info@example.com</a
+                            >
+                            <a class="address__link" href="tel:+48111111111"
+                                >+48 111 111 111</a
+                            >
+                        </address>
+                    </div>
+                    <div class="join-us">
+                        <h4 class="join-us__title">Dołącz do nas</h4>
+                        <div class="join-us__list">
+                            <a class="join-us__link" href="#">
+                                <svg width="20px" height="20px">
+                                    <use
+                                        href="./images/icons.svg#icon-instagram-1"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a class="join-us__link" href="#">
+                                <svg width="20px" height="20px">
+                                    <use
+                                        href="./images/icons.svg#icon-twitter-1"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a class="join-us__link" href="#">
+                                <svg width="20px" height="20px">
+                                    <use
+                                        href="./images/icons.svg#icon-facebook-1"
+                                    ></use>
+                                </svg>
+                            </a>
+                            <a class="join-us__link" href="#">
+                                <svg width="20px" height="20px">
+                                    <use
+                                        href="./images/icons.svg#icon-linkedin-1"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="newsletter">
@@ -418,5 +488,12 @@
                 </div>
             </div>
         </footer>
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="./js/mobile-menu.js"></script>
     </body>
 </html>
