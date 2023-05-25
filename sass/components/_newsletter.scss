@@ -1,4 +1,6 @@
 .newsletter {
+    width: 100%;
+
     flex-grow: 1;
     @include desktop {
         margin-left: 8px;
@@ -21,6 +23,8 @@
         gap: 12px;
         justify-content: center;
         align-items: center;
+        width: 100%;
+
         @include desktop {
             flex-direction: row;
         }
@@ -36,9 +40,10 @@
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         flex-grow: 1;
-        width: 450px;
+        width: 100%;
+        max-width: 450px;
         @include desktop {
-            width: 358px;
+            max-width: 358px;
         }
     }
 
@@ -60,12 +65,11 @@
         border-radius: 4px;
         white-space: nowrap;
         fill: currentColor;
-
-        width: 200px;
-
+        width: 100%;
+        max-width: 200px;
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         &:is(:hover, :focus) {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
     }
 }
